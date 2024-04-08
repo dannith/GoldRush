@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.shape.*?>
+
+<fx:root height="32" type="javafx.scene.shape.Rectangle" width="15" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1">
+   <fill>
+      <RadialGradient centerX="0.5" centerY="0.40995260663507105" focusAngle="-88.36" focusDistance="0.4597701149425286" radius="1.0">
+         <stops>
+            <Stop>
+               <color>
+                  <Color />
+               </color>
+            </Stop>
+            <Stop offset="0.007662835249042145">
+               <color>
+                  <Color red="0.24798975884914398" green="0.7763158082962036" blue="0.644234299659729" />
+               </color>
+            </Stop>
+            <Stop offset="1.0">
+               <color>
+                  <Color red="0.02997075952589512" green="0.12591373920440674" blue="0.15789473056793213" />
+               </color>
+            </Stop>
+         </stops>
+      </RadialGradient>
+   </fill>
+   <effect>
+      <DropShadow height="45.92" offsetY="10.0" radius="14.73" spread="0.09" width="15.0">
+         <color>
+            <Color opacity="0.5021644830703735" />
+         </color></DropShadow>
+   </effect>
+</fx:root>

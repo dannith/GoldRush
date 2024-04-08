@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.shape.*?>
+
+<fx:root type="javafx.scene.layout.Pane" visible="false" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1">
+    <Rectangle fx:id="fxShadow" fill="#0000006d" height="20.0" width="80.0">
+      <effect>
+         <GaussianBlur />
+      </effect></Rectangle>
+    <Rectangle fx:id="fxRect" height="12.0" width="80.0">
+      <fill>
+         <RadialGradient centerX="0.4116022099447514" centerY="0.5" focusAngle="-71.57" focusDistance="0.6436781609195401" radius="1.0">
+            <stops>
+               <Stop>
+                  <color>
+                     <Color red="1.0" green="1.0" blue="0.24074074625968933" />
+                  </color>
+               </Stop>
+               <Stop offset="1.0">
+                  <color>
+                     <Color red="0.25" green="0.23842592537403107" blue="0.23842592537403107" />
+                  </color>
+               </Stop>
+            </stops>
+         </RadialGradient>
+      </fill>
+      <effect>
+         <Glow level="1.0" />
+      </effect></Rectangle>
+</fx:root>

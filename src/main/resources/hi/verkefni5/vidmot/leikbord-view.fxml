@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import hi.verkefni5.vidmot.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<fx:root maxHeight="500.0" maxWidth="500.0" minHeight="500.0" minWidth="500.0" prefHeight="500.0" prefWidth="500.0" style="-fx-background-color: SADDLEBROWN;" type="javafx.scene.layout.Pane" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Rectangle fx:id="fxDarkness" arcHeight="5.0" arcWidth="5.0" height="500.0" stroke="BLACK" strokeType="INSIDE" width="500.0">
+         <fill>
+            <RadialGradient centerX="0.47790055248618785" centerY="0.4194312796208531" focusAngle="-90.0" focusDistance="0.7126436781609196" radius="0.6781609195402298">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color opacity="0.0" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.05849999934434891" green="0.09110647439956665" blue="0.15000000596046448" />
+                     </color>
+                  </Stop>
+               </stops>
+            </RadialGradient>
+         </fill>
+      </Rectangle>
+      <Label fx:id="fxTimeleft" alignment="CENTER" contentDisplay="CENTER" maxWidth="500.0" prefHeight="100.0" prefWidth="500.0" text="30" textAlignment="CENTER" textFill="#0000004f">
+         <font>
+            <Font name="System Bold" size="64.0" />
+         </font>
+         <effect>
+            <GaussianBlur radius="5.0" />
+         </effect>
+      </Label>
+      <Grafari fx:id="fxGrafari" />
+      <BottomInfoView fx:id="fxInfo" layoutY="500.0" maxWidth="500.0" opacity="0" />
+      <Label fx:id="fxGoldText" alignment="CENTER" contentDisplay="CENTER" focusTraversable="false" mouseTransparent="true" prefHeight="400.0" prefWidth="500.0" text="Gold Rush!" textAlignment="CENTER" textOverrun="WORD_ELLIPSIS">
+         <font>
+            <Font name="System Bold" size="72.0" />
+         </font>
+         <effect>
+            <Bloom />
+         </effect>
+         <textFill>
+            <LinearGradient endX="0.033175355450236976" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.9055555462837219" green="1.0" blue="0.0555555559694767" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+      <Label fx:id="fxScoreLabel" alignment="CENTER" contentDisplay="CENTER" prefHeight="500.0" prefWidth="500.0" text="Stig: 2">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+         <textFill>
+            <LinearGradient cycleMethod="REFLECT" endY="1.0" startY="0.0947867298578199">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.8833333253860474" green="1.0" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill>
+         <effect>
+            <Bloom />
+         </effect>
+      </Label>
+   </children>
+</fx:root>

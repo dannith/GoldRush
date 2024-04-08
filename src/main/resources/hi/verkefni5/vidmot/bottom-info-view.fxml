@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<fx:root alignment="CENTER" prefHeight="0.0" prefWidth="600.0" type="javafx.scene.layout.VBox" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label fx:id="fxStig" alignment="CENTER" contentDisplay="CENTER" minHeight="40.0" minWidth="40.0" style="-fx-stroke: black; -fx-stroke-width: 2px;" text="0" textAlignment="CENTER" textFill="#ffd500">
+         <font>
+            <Font name="Malgun Gothic Bold" size="24.0" />
+         </font>
+         <VBox.margin>
+            <Insets top="-40.0" />
+         </VBox.margin>
+         <effect>
+            <Glow level="1.0" />
+         </effect>
+         <graphic>
+            <Circle radius="50.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" translateY="25.0">
+               <fill>
+                  <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color opacity="0.37662336230278015" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="1.0" green="1.0" blue="1.0" opacity="0.0" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </RadialGradient>
+               </fill>
+            </Circle>
+         </graphic>
+      </Label>
+   </children>
+</fx:root>

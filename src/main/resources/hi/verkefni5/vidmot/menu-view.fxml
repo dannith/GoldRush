@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+
+<MenuBar xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hi.verkefni5.vidmot.MenuController">
+     <menus>
+       <Menu mnemonicParsing="false" style="-fx-fill: yellow;" text="Skrá">
+         <items>
+           <MenuItem mnemonicParsing="false" onAction="#onHefjaleik" text="Hefja leik" />
+            <MenuItem mnemonicParsing="false" onAction="#onLokaleik" text="Hætta" />
+         </items>
+       </Menu>
+       <Menu mnemonicParsing="false" text="Breyta">
+         <items>
+            <RadioMenuItem fx:id="0" mnemonicParsing="false" onAction="#onErfidleikaStig" selected="true" text="Auðvelt">
+               <toggleGroup>
+                  <ToggleGroup fx:id="fxErfid" />
+               </toggleGroup>
+            </RadioMenuItem>
+            <RadioMenuItem fx:id="1" mnemonicParsing="false" onAction="#onErfidleikaStig" text="Miðlungs" toggleGroup="$fxErfid" />
+            <RadioMenuItem fx:id="2" mnemonicParsing="false" onAction="#onErfidleikaStig" text="Erfitt" toggleGroup="$fxErfid" />
+         </items>
+       </Menu>
+       <Menu mnemonicParsing="false" text="Hjálp">
+         <items>
+           <MenuItem mnemonicParsing="false" text="Um GoldRush" />
+         </items>
+       </Menu>
+     </menus>
+</MenuBar>
